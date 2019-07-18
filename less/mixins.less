@@ -8,3 +8,32 @@
     border-radius:10px;
     color:white;
 }
+
+@keyframes change-color {
+    0% {background:lavender;}
+    25% {background:thistle;}
+    50% {background:plum;}
+    75% {background:thistle;}
+    100% {background:lavender;}
+}
+
+.color-an(){
+    animation-name:change-color;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes change-color2 {
+    0% {background:lightseagreen;}
+    25% {background:darkcyan;}
+    50% {background:teal;}
+    75% {background:darkcyan;}
+    100% {background:lightseagreen;}
+}
+
+
+.color-an2(){
+    animation-name:change-color2;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+}

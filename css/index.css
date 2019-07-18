@@ -1,3 +1,37 @@
+@keyframes change-color {
+  0% {
+    background: lavender;
+  }
+  25% {
+    background: thistle;
+  }
+  50% {
+    background: plum;
+  }
+  75% {
+    background: thistle;
+  }
+  100% {
+    background: lavender;
+  }
+}
+@keyframes change-color2 {
+  0% {
+    background: lightseagreen;
+  }
+  25% {
+    background: darkcyan;
+  }
+  50% {
+    background: teal;
+  }
+  75% {
+    background: darkcyan;
+  }
+  100% {
+    background: lightseagreen;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,6 +169,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background: lavender;
 }
 h1,
 h2,
@@ -242,6 +277,9 @@ header nav .first-anchor {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  animation-name: change-color;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 500px) {
   .home .content-section {
@@ -346,6 +384,9 @@ header nav .first-anchor {
   font-size: 2rem;
   border-radius: 10px;
   color: white;
+  animation-name: change-color2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn .generic-b {
